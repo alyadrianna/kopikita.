@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Kita</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Kopi<span>Kita</span>.</a>
+
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="navbar-extra">
+      <!-- Search Icon -->
+      <a href="#" id="search-btn"><i data-feather="search"></i></a>
+
+      <!-- Search Box -->
+      <div class="search-box" id="search-box" style="display: none;">
+        <input type="text" id="search-input" placeholder="Cari menu...">
+      </div>
+
+      <!-- Cart Icon -->
+      <a href="#" id="shopping-cart">
+        <i data-feather="shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </a>
+
+      <!-- Menu Icon -->
+      <a href="#" id="menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Hero Section start -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Mari Nikmati Secawan <span>Kopi</span></h1>
+      <p>Kami menggunakan 100% biji kopi Arabika untuk memastikan kualiti terbaik dalam setiap cawan!</p>
+      <a href="#" class="cta">Beli Sekarang!</a>
+    </main>
+  </section>
+  <!-- Hero Section end -->
+
+  <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>About</span> Us</h2>
+    <div class="row">
+      <div class="about-img">
+        <img src="img/about.us.jpg" alt="About Us">
+      </div>
+      <div class="content">
+        <h3>Kenapa memilih kopi kami?</h3>
+        <p>Kami menawarkan perpaduan unik yang diracik oleh pakar kopi kami, menghasilkan rasa yang sempurna dengan sentuhan istimewa.</p>
+        <p>Kopi kami juga rendah kalori, terutama jika disajikan tanpa gula, menjadikannya pilihan yang baik bagi mereka yang menjaga berat badan atau menjalani hidup sehat.</p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+
+  <!-- Menu Section start -->
+  <section id="menu" class="menu">
+    <h2><span>Menu</span> Kami</h2>
+    <p>Berikut adalah pilihan minuman dan pencuci mulut kami yang menyegarkan dan enak.</p>
+
+    <div class="row">
+      <!-- Menu Items -->
+      <div class="menu-card">
+        <img src="img/menu/iced latte.jpg" alt="Iced latte" class="menu-card-img" />
+        <h3 class="menu-card-title">- Iced Latte -</h3>
+        <p class="menu-card-price">RM 8.00</p>
+        <button class="add-to-cart-btn" data-name="Iced Latte" data-price="10.00">Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="img/menu/Espresso.jpg" alt="Espresso" class="menu-card-img" />
+        <h3 class="menu-card-title">- Espresso -</h3>
+        <p class="menu-card-price">RM 9.00</p>
+        <button class="add-to-cart-btn" data-name="Espresso" data-price="9.00">Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="img/menu/Cappuccino.jpg" alt="Cappuccino" class="menu-card-img" />
+        <h3 class="menu-card-title">- Cappuccino -</h3>
+        <p class="menu-card-price">RM 9.90</p>
+        <button class="add-to-cart-btn" data-name="Cappuccino" data-price="9.90">Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="img/menu/matcha.jpg" alt="Matcha" class="menu-card-img" />
+        <h3 class="menu-card-title">- Ice Matcha -</h3>
+        <p class="menu-card-price">RM 6.90</p>
+        <button class="add-to-cart-btn" data-name="Ice Matcha" data-price="6.90">Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="img/menu/oreo blended.jpg" alt="Oreo Blended" class="menu-card-img" />
+        <h3 class="menu-card-title">- Oreo Blended -</h3>
+        <p class="menu-card-price">RM 7.30</p>
+        <button class="add-to-cart-btn" data-name="Oreo Blended" data-price="7.30">Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="img/menu/mocha.jpg" alt="Mocha" class="menu-card-img" />
+        <h3 class="menu-card-title">- Mocha -</h3>
+        <p class="menu-card-price">RM 5.00</p>
+        <button class="add-to-cart-btn" data-name="Mocha" data-price="5.00">Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="img/menu/cheesecake.jpg" alt="Strawberry Cheesecake" class="menu-card-img" />
+        <h3 class="menu-card-title">- Strawberry Cheesecake -</h3>
+        <p class="menu-card-price">RM 5.50</p>
+        <button class="add-to-cart-btn" data-name="Strawberry Cheesecake" data-price="5.50">Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="img/menu/Blueberry cake.jpg" alt="Blueberry Cake" class="menu-card-img" />
+        <h3 class="menu-card-title">- Blueberry Cake -</h3>
+        <p class="menu-card-price">RM 4.30</p>
+        <button class="add-to-cart-btn" data-name="Blueberry Cake" data-price="4.30">Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="img/menu/chocolate cake.jpg" alt="Chocolate Cake" class="menu-card-img" />
+        <h3 class="menu-card-title">- Chocolate Cake -</h3>
+        <p class="menu-card-price">RM 4.00</p>
+        <button class="add-to-cart-btn" data-name="Chocolate Cake" data-price="4.00">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <!-- Menu Section end -->
+
+  <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <h2><span>Contact</span> Us</h2>
+    <p>Keep in touch via email and support system.</p>
+
+    <div class="row">
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Nama / Name" />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="email" placeholder="E-mail" />
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="tel" placeholder="No. Phone" />
+        </div>
+        <button type="submit" class="btn">Contact Us</button>
+      </form>
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#menu">Menu Kami</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="#">Smoothies</a> | &copy; 2025.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Cart Panel -->
+  <div class="cart-panel" id="cart-panel">
+    <h3>Troli Anda</h3>
+    <div id="cart-items"></div>
+    <p id="cart-total">Jumlah: RM 0.00</p>
+    <button onclick="closeCart()" class="btn">Tutup</button>
+    <button onclick="showCheckoutForm()" class="btn buy-now-btn">Buy Now</button>
+
+    <!-- Checkout Form (hidden by default) -->
+   <form id="checkout-form" action="data.php" method="POST" style="display:none; margin-top: 20px;">
+      <h4>Checkout Form</h4>
+      <div class="input-group">
+        <label for="customer-name">Nama:</label><br/>
+        <input type="text" id="customer-name" name="customer-name" required placeholder="Nama penuh" />
+      </div>
+      <div class="input-group">
+        <label for="customer-email">Email:</label><br/>
+        <input type="email" id="customer-email" name="customer-email" required placeholder="Email anda" />
+      </div>
+      <div class="input-group">
+        <label for="customer-phone">No. Telefon:</label><br/>
+        <input type="tel" id="customer-phone" name="customer-phone" required placeholder="No. telefon" />
+      </div>
+      <div class="input-group">
+        <label for="customer-address">Alamat:</label><br/>
+        <textarea id="customer-address" name="customer-address" required placeholder="Alamat penghantaran"></textarea>
+      </div>
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+  </div>
+
+  <!-- Feather Icons -->
+  <script>feather.replace();</script>
+
+  <!-- My JavaScript -->
+  <script src="app.js"></script>
+
+  <!-- Inline JS for cart checkout form -->
+  <script
+    src="app.js">
+  </script>
+</body>
+</html>
